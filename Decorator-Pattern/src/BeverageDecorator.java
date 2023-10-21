@@ -1,0 +1,16 @@
+public class BeverageDecorator extends Beverage{
+    protected Beverage beverage;
+
+    public BeverageDecorator(Beverage beverage) {
+        this.beverage = beverage;
+    }
+
+    public String getDescription()
+    {
+        return beverage.getDescription();
+    }
+    @Override
+    public double cost() {
+        return beverage.cost();
+    }
+}
